@@ -1,11 +1,23 @@
 body {
+  /* other styles */
   height: 100vh;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fde2e4;
   font-family: "Comic Sans MS", "Arial Rounded MT Bold", sans-serif;
+
+  /* animated background */
+  background: linear-gradient(45deg, #fde2e4, #e2ece9, #cdebe3);
+  background-size: 600% 600%; /* makes animation smoother */
+  animation: gradientBG 15s ease infinite;
+}
+
+/* animation keyframes */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .card {
@@ -32,12 +44,3 @@ button:hover {
   transform: scale(1.05);
 }
 
-@keyframes float {
-  0% { background-color: #fde2e4; }
-  50% { background-color: #e2ece9; }
-  100% { background-color: #fde2e4; }
-}
-
-body {
-  animation: float 10s infinite;
-}
