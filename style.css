@@ -31,3 +31,13 @@ button {
 button:hover {
   transform: scale(1.05);
 }
+
+@keyframes float {
+  0% { background-color: #fde2e4; }
+  50% { background-color: #e2ece9; }
+  100% { background-color: #fde2e4; }
+}
+
+body {
+  animation: float 10s infinite;
+}
