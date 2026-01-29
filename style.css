@@ -6,8 +6,8 @@ body {
 }
 
 .indexbg {
-  background: linear-gradient(45deg, #FF8AE8, #6863FF, #63A7FF);
-  background-size: 200% 200%; /* makes animation smoother */
+  background: linear-gradient(0deg, #FF8AE8, #6863FF, #63A7FF);
+  background-size: 100% 150%; /* makes animation smoother */
 }
 
 
@@ -89,7 +89,7 @@ button:hover {
 }
 
 a {
-  color: #f99;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
 }
@@ -100,8 +100,9 @@ a:hover {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #AF8EE8;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 /* Style the links inside the navigation bar */
@@ -112,21 +113,38 @@ a:hover {
   list-style-type: none;
   margin: 5px;
   padding: 10px;
+  
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color:#FF6392;
   color: black;
+  
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #FF6392;
-  color: white;
+	color: white;
+	background colour:#333;
 }
+
 
 .paragraph{
   align-items: center;
   justify-content: center;
 }
+
+
+.starrybg { 
+	background-color:black;
+	background-image:
+	radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+	radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+	radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+	radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+	background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+	background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+
