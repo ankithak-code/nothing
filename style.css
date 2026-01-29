@@ -1,0 +1,132 @@
+body {
+  /* other styles */
+  font-family: "Comic Sans MS", "Arial Rounded MT Bold", sans-serif;
+  display: block;
+  
+}
+
+.indexbg {
+  background: linear-gradient(45deg, #FF8AE8, #6863FF, #63A7FF);
+  background-size: 200% 200%; /* makes animation smoother */
+}
+
+
+
+.aboutbg {
+  background-color: #FF8AE8;
+ ;
+}
+
+.anotherbg {
+  background-color: #ffb8b8;
+  background-image: linear-gradient(rgba(182, 124, 254, 1) 2.25px, transparent 2.25px), linear-gradient(90deg, rgba(182, 124, 254, 1) 2.25px, transparent 2.25px);
+  background-size: 33px 33px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 70vh;           /* Ensures the container takes the full viewport height */
+  width: 100%;
+
+}
+
+.card {
+  background: white;
+  height: 35vh;
+  width: 70vh;
+  margin: 0;
+  display: block;
+  padding: 30px 40px;
+  border-radius: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-container2 {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 40vh;           /* Ensures the container takes the full viewport height */
+  width: 100%;
+}
+
+.card2 {
+  background: white;
+  
+  justify-content: center;
+  align-items: center;
+  padding: 30px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+ 
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  background: #cdb4db;
+  color: #4a3f55;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+a {
+  color: #f99;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display: flex;
+  justify-content: center; /* Or space-between for spread */
+  align-items: center;
+  list-style-type: none;
+  margin: 5px;
+  padding: 10px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #FF6392;
+  color: white;
+}
+
+.paragraph{
+  align-items: center;
+  justify-content: center;
+}
