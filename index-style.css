@@ -1,0 +1,58 @@
+body {
+  /* other styles */
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Comic Sans MS", "Arial Rounded MT Bold", sans-serif;
+
+  /* animated background */
+  background: linear-gradient(45deg, #fde2e4, #e2ece9, #cdebe3);
+  background-size: 600% 600%; /* makes animation smoother */
+  animation: gradientBG 15s ease infinite;
+}
+
+/* animation keyframes */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.card {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  background: #cdb4db;
+  color: #4a3f55;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+a {
+  color: #f99;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
